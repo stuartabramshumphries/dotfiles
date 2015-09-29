@@ -1,0 +1,20 @@
+[user]
+        name = Stuart Abrams-Humphries
+        email = stuart.abrams-humphries@worldpay.com
+[core]
+        editor = vim
+        excludesfile = /home/adm_abramshumps906/.gitignore
+[merge]
+        tool = vimdiff
+[diff]
+        tool = vimdiff
+
+[remote]
+        origin = prune
+[push]
+        default = current
+
+[http]
+        proxy = http://proxy.worldpaytd.local:8080
+[https]
+        proxy = https://proxy.worldpaytd.local:8080
