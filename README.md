@@ -1,2 +1,2 @@
 # dotfiles
-bash and git onfig files
+bash, vim and git config files
