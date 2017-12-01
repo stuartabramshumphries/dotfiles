@@ -13,8 +13,7 @@ if [ -f /etc/bash_completion.d/git ]; then
 fi
 # show pending (+ = new files, * = changed files) state
 #export GIT_PS1_SHOWDIRTYSTATE=1
-#export PS1='\[\033[01;32m\][\[\033[01;35m\]\u\[\033[01;32m\]@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\]\
-[\033[01;32m\]]\n\[\033[00m\]\$ '
+export PS1='\[\033[01;32m\][\[\033[01;35m\]\u\[\033[01;32m\]@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\]\[\033[01;32m\]]\n\[\033[00m\]\$ '
 function _git_prompt() {
   local git_status="`git status -unormal 2>&1`"
     if ! [[ "$git_status" =~ Not\ a\ git\ repo ]]; then

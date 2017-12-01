@@ -30,10 +30,10 @@
 [push]
         default = current
 
-[http]
-        proxy = http://proxy.worldpaytd.local:8080
-[https]
-        proxy = https://proxy.worldpaytd.local:8080
+#[http]
+        #proxy = http://proxy.blah.local:8080
+#[https]
+        #proxy = https://proxy.blah.local:8080
 [alias]
 	a = add --all
 	ai = add -i
