@@ -28,7 +28,8 @@ function _git_prompt() {
           fi
 }
 function _prompt_command() {
-  PS1="`if [ \$? = 0 ]; then echo -n '\[\e[0;33;32m\]^-^';else echo -n '\[\e[0;33;31m\]-_-';fi`\[\033[00m\] \u@\h \[\033[36m\
-]\w `_git_prompt`\[\033[37m\]$\[\033[00m\] "
+  PS1="`if [ \$? = 0 ]; then echo -n '\[\e[0;33;32m\]^-^';else echo -n '\[\e[0;33;31m\]-_-';fi`\[\033[00m\] \u@\h \[\033[36m\]\w `_git_prompt`\[\033[37m\]$\[\033[00m\] "
 }
 PROMPT_COMMAND=_prompt_command
+source ~/.bash_git
+export CDPATH=.:~

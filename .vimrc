@@ -1,5 +1,5 @@
 call pathogen#infect()
-set background=dark
+set background=light
 syntax on
 
 set nocompatible
